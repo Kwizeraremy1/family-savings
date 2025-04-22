@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/Issue_Loan.css">
+    <title>Issue Loan</title>
+</head>
+<body>
+        <div>
+            <div class="header">
+                <div class="menu-bar"><img class="menu-img" src="pictures/cross.png"> </div>
+        <div class="logo"><img class="img-logo" src="pictures/Header Logo.png"> </div>
+        <div class="user">
+            <div class="user-img"><img class="user-profile" src="pictures/profile.png" ></div>
+            <div class="user-name" onclick="
+             document.querySelector('.float').style.display = 'inline-block';">Ishimwe Didier</div>
+        </div>
+            </div>
+            <div class="body-container">
+                <div class="menu">
+                    <a href="dashboard.html" class="menu-items" >Dashboard</a>
+                    <a href="view_savings.html" class="menu-items">view savings</a>
+                    <a href="add_savings.html" class="menu-items">add savings</a>
+                    <a href="Issue_loan.html" class="menu-items active">issue loan</a>
+                    <a href="pay_Loan.html" class="menu-items">pay loan</a>
+                    <a href="*" class="menu-items">view loans</a>
+               </div>
+                <div class="board">
+                    <div class="board-header"><p class="title">Issue Loan</p></div>
+                    <div class="content">
+                        <div>
+                            <label for="Date">Date:</label>
+                            <input type="date" name="datetime" class="date" ><br>
+                            <label for="Select-person">Select a person:</label>
+                            <select id="users" name="users">
+                                <option value="select">Select</option>
+                                <option value="Papa">Papa</option>
+                                <option value="Mama">Mama</option>
+                                <option value="Ishimwe didier">Ishimwe</option>
+                                <option value="Umuhoza Josiane">Josiane</option>
+                                <option value="Muhire Yves">yves</option>
+                                <option value="Kwizera remy">Papa</option>
+                                <option value="Umwizerwa Caline">Caline</option>
+                              </select><br>
+    
+                              <label for="Amount">Amount:</label>
+                              <input type="text" name="Amount" required placeholder="Enter The Amount">
+                              <button type="submit">Commit</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="float js-float">
+            <img class="close-button" src="pictures/cross.png" onclick="
+            document.querySelector('.float').style.display = 'none';" alt="close">
+            <p>Ishimwe Didier</p>
+            <button onclick="
+            document.querySelector('.float').style.display = 'none';" class="logout-button">Logout</button>
+        </div>
+</body>
+<footer><span>2025</span>@ all rights reserved by <span>RMDEV</span></footer>
+</html>

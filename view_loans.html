@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/view_loans.css">
+    <title>View loans</title>
+</head>
+<body>
+        <div>
+            <div class="header">
+                <div class="menu-bar"><img class="menu-img" src="pictures/cross.png" onclick="
+                    document.querySelector('.menu').style.display = 'none';
+                    "> </div>
+        <div class="logo"><img class="img-logo" src="pictures/Header Logo.png"> </div>
+        <div class="user">
+            <div class="user-img"><img class="user-profile" src="pictures/profile.png" ></div>
+            <div class="user-name" onclick="
+             document.querySelector('.float').style.display = 'inline-block';">Ishimwe Didier</div>
+        </div>
+            </div>
+            <div class="body-container">
+                <div class="menu">
+                    <a href="dashboard.html" class="menu-items" >Dashboard</a>
+                    <a href="view_savings.html" class="menu-items">view savings</a>
+                    <a href="add_savings.html" class="menu-items">add savings</a>
+                    <a href="Issue_loan.html" class="menu-items">issue loan</a>
+                    <a href="pay_Loan.html" class="menu-items">pay loan</a>
+                    <a href="view_loans.html" class="menu-items active">view loans</a>
+               </div>
+                <div class="board">
+                    <div class="board-header">
+                        <p class="title">View loans</p>
+                    </div>
+                    <div class="content">
+                        <div  class="savings-table">
+                            <table>
+                                <tr>
+                                    <th class="th-date">Date</th>
+                                    <th class="th-name">Account Holder</th>
+                                    <th class="th-amount">Amount</th>
+                                </tr>
+                                <tr>
+                                    <td>2025-01-01</td>
+                                    <td>Umuhoza Josiane</td>
+                                    <td>$1000</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-02-01</td>
+                                    <td>Ishimwe Didier</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-03-01</td>
+                                    <td>Muhire Yves</td>
+                                    <td>$2000</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-03-01</td>
+                                    <td>Papa</td>
+                                    <td>$2000</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-01-01</td>
+                                    <td>Mama</td>
+                                    <td>$1000</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-02-01</td>
+                                    <td>Kwizera Remy</td>
+                                    <td>$1500</td>
+                                </tr>
+                                <tr>
+                                    <td>2025-03-01</td>
+                                    <td>Umwizerwa Caline</td>
+                                    <td>$2000</td>
+                                </tr>
+                            </table>
+                            <p class="red">dosvnfsij</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="float js-float">
+            <img class="close-button" src="pictures/cross.png" onclick="
+            document.querySelector('.float').style.display = 'none';" alt="close">
+            <p>Ishimwe Didier</p>
+            <button onclick="
+            document.querySelector('.float').style.display = 'none';" class="logout-button">Logout</button>
+        </div>                
+</body>
+<script src="scripts/view_loans.js"></script>
+<footer><span>2025</span>@ all rights reserved by <span>RMDEV</span></footer>
+</html>
